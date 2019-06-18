@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "113563962343",
+    "firebase_url": "https://present-sir-b4aec.firebaseio.com",
+    "project_id": "present-sir-b4aec",
+    "storage_bucket": "present-sir-b4aec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113563962343:android:35ee63d1620af675",
+        "android_client_info": {
+          "package_name": "com.upthrusttech.present_sir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113563962343-vk5a92351ojsg206475738a215550l4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upthrusttech.present_sir",
+            "certificate_hash": "1e021ecf7d843d2c41876834dda6825a942e8d2a"
+          }
+        },
+        {
+          "client_id": "113563962343-d31iev0o45dmqq5d4a39p97igs7pj829.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYE_pnjYSQY8IceINYvrn7cVuH3rawsTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113563962343-d31iev0o45dmqq5d4a39p97igs7pj829.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
