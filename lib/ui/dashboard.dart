@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:present_sir/auth.dart';
 import 'package:present_sir/models/subject.dart';
-import 'package:present_sir/ui/calender.dart';
 import 'package:present_sir/ui/splashscreen.dart';
 
 class Dashboard extends StatefulWidget {
@@ -56,8 +55,7 @@ class _DashboardState extends State<Dashboard> {
                       child: Text(sub.code[0]),
                     ),
                     title: sub,
-                    onTap: () {
-                    },
+                    onTap: () {},
                     onLongPress: () {},
                   );
                 },
@@ -149,11 +147,18 @@ class _DashboardState extends State<Dashboard> {
 
   void _handleSubmit(String text, String text2) async {
     Subject sub = new Subject(text, text2, [], []);
-    _subjects.add(sub.toMap());
+    List _subs = [];
+    _subs.insertAll(0, _profile['subjects']);
+    //  _profile['subjects'].forEach((s){
+    //    _subs.a
+    //  });
+    _subs.add(sub.toMap());
     await _db
         .collection("users")
         .document(_profile['uid'])
-        .updateData({'subjects': _subjects});
+        .updateData({'subjects': _subs}).then((res){
+          _subs.clear();
+        });
   }
 }
 
